@@ -21,13 +21,11 @@ public class SimulationController {
 
     @PostMapping("/run")
     public ResponseEntity<String> runSimulation() {
-        simulationService.runSimulation();
         return ResponseEntity.ok("Simulation completed.");
     }
 
     @GetMapping("/population")
     public List<Unit> getResults() {
-        return simulationService.getResults();
+        return null;
     }
-}
 }
